@@ -1,7 +1,9 @@
+name: Build React App
+
 on:
   push:
     tags:
-      - '*'
+      - "main"
 
 jobs:
   build:
@@ -14,7 +16,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Install dependencies
-        run: npm install    
+        run: npm install
       - name: Test
         run: npm test
       - name: Generate build
@@ -25,4 +27,3 @@ jobs:
         with:
           name: react-github-actions-build
           path: build
- 
