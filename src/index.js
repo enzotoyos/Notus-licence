@@ -16,6 +16,7 @@ import Landing from "views/Landing.js";
 import Profile from "views/Profile.js";
 import Index from "views/Index.js";
 import ForgotPassword from "views/auth/ForgotPassword";
+import Login from "views/auth/Login";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -27,7 +28,8 @@ ReactDOM.render(
       <Route path="/landing" exact component={Landing} />
       <Route path="/profile" exact component={Profile} /> *
       <Route path="/auth/forgotPassword" exact component={ForgotPassword} />
-      <Route path="/auth/login" exact component={Index} />
+      <Route path="/auth/login" exact component={Login} />
+      <Route path="/" exact component={Index} />
       {/* add redirect for first page */}
       <Redirect from="*" to="/" />
     </Switch>
