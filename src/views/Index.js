@@ -10,11 +10,11 @@ export default function Index() {
   return (
     <>
       <main>
-        <div style={{ backgroundColor: "#0f172a" }}>
-          <section className="relative w-full h-full py-40 min-h-screen ">
+        <div>
+          <section className="relative w-full h-full py-40 min-h-screen bg-blueGray-800">
             <div class="wrapper">
               <div data-reactroot>
-                <div>
+                <div className="bg-blueGray-800">
                   <div
                     style={{
                       height: "100%",
